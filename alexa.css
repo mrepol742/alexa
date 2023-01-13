@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/MavenPro.woff2") format('woff2');
+}
+
+::selection {
+    background-color: #ffffff;
+    color: #f581ced5;
+}
+
+::-moz-selection {
+    background-color: #ffffff;
+    color: #f581ced5;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track {
+	background-color: #1d1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+	border: none;
+	background-color: #f581ced5;
+	border-radius: 0.2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #ffffff;
+}
+
+body {
+    background-color: #1d1a1a !important;
+    color: #ffffff;
+}
+
+* {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#txt {
+    font-size: 5em;
+    margin-top: 10%;
+}
+
+.ttt {
+    margin-top: 10%;
+}
+
+@media (max-width:1080px) {
+    #txt {
+        font-size: 2em;
+        margin-top: 35%;
+    }
+
+    .ttt {
+        margin-top: 25%;
+    }
+    
+}
+
+.card {
+    padding: 0px;
+    background-color: transparent;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.03);
+    transition: transform ease-in-out 0.5s;
+}
+
+.ico {
+    color: #f581ced5;
+}
+
+#fullpage {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+    border-radius: 10px;
+    transform: scale(0.9);
+    border: none;
+  }
+
+  #fullpage:hover {
+    transform: scale(0.92);
+    transition: transform ease-in-out 0.5s;
+  }
+
+
+  .anim {
+    opacity: 0;
+    transform: translateY(15%);
+    transition: all 1.5s ease;
+}
+
+.anim.active {
+    opacity: 1;
+    transform: translateY(0);
+}

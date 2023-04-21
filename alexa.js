@@ -1,3 +1,15 @@
+const observer = lozad();
+observer.observe();
+var typed = new Typed('#txt', {
+strings: [
+"M̳̿͟͞a̳̿͟͞r̳̿͟͞y̳̿͟͞v̳̿͟͞i̳̿͟͞l̳̿͟͞ ̳̿͟͞A̳̿͟͞l̳̿͟͞e̳̿͟͞x̳̿͟͞a̳̿͟͞ ̳̿͟͞G̳̿͟͞u̳̿͟͞n̳̿͟͞o̳̿͟͞"],
+typeSpeed: 20,
+loop: true,
+loopCount: Infinity,
+showCursor: false,
+fadeOut: true
+});
+
 let paints = 4;
 let drawings = 11;
 let photographs = 33;
